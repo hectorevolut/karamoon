@@ -8,9 +8,17 @@
 
 #include <stddef.h>
 
-void	*ft_memset(void *b, int c, size_t n)
+void *ft_memset(void *b, int c, size_t n)
 {
-	(void)c;
-	(void)n;
-	return (b);
+    size_t i;
+    unsigned char *p;
+
+    p = b;
+    i = 0;
+    while (i < n)
+    {
+        p[i] = c;
+        i++;
+    }
+    return (b);
 }

@@ -10,10 +10,22 @@
 
 #include <stdlib.h>
 
-size_t	ft_strlen(char *s);
+size_t ft_strlen(char *s);
 
-char	*ft_strdup(char *s)
+char *ft_strdup(char *s)
 {
-	(void)s;
-	return (NULL);
+	char *dup;
+	size_t i;
+
+	dup = malloc(ft_strlen(s) + 1);
+	if (!dup)
+		return (NULL);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		dup[i] = s[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
 }

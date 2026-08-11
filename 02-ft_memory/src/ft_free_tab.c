@@ -7,8 +7,19 @@
  */
 
 #include <stdlib.h>
+#include <stddef.h>
 
-void	ft_free_tab(char **tab)
+void ft_free_tab(char **tab)
 {
-	(void)tab;
+    size_t i;
+
+    if (!tab)
+        return;
+    i = 0;
+    while (tab[i])
+    {
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
 }

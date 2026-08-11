@@ -8,12 +8,19 @@
  */
 
 #include <stdlib.h>
+#include <stdint.h>
 
-void	*ft_memset(void *b, int c, size_t n);
+void *ft_memset(void *b, int c, size_t n);
 
-void	*ft_calloc(size_t n, size_t tam)
+void *ft_calloc(size_t n, size_t tam)
 {
-	(void)n;
-	(void)tam;
-	return (NULL);
+    void *ptr;
+
+    if (tam != 0 && n > SIZE_MAX / tam)
+        return (NULL);
+    ptr = malloc(n * tam);
+    if (!ptr)
+        return (NULL);
+    ft_memset(ptr, 0, n * tam);
+    return (ptr);
 }
