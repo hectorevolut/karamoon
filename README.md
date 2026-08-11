@@ -12,7 +12,7 @@ Cada proyecto es **una unidad cerrada**: su enunciado, su código, su Makefile y
 |---|---|---|---|
 | [**00**](00-ft_hello/) | `ft_hello` | Escribir en pantalla sin `printf` | ✅ Defendido · [teoría](00-ft_hello/THEORY.md) |
 | [**01**](01-ft_string/) | `ft_string` | Medir, copiar y comparar cadenas a mano | ✅ Defendido · [teoría](01-ft_string/THEORY.md) |
-| 02 | `ft_memory` | Memoria dinámica y arrays que crecen | 🟡 Siguiente |
+| [**02**](02-ft_memory/) | `ft_memory` | Pedir memoria, usarla y devolverla | 🟢 Disponible |
 | 03 | `ft_canvas` | Un lienzo en memoria y una **imagen en disco** | 🔒 |
 | 04 | `ft_draw` | Líneas, rectángulos, círculos | 🔒 |
 | 05 | `ft_window` | Tu lienzo en una ventana de verdad | 🔒 |
