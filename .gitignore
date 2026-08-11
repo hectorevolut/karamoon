@@ -1,0 +1,8 @@
+# Binarios
+hello
+*.o
+*.a
+*.out
+
+# Sistema
+.DS_Store

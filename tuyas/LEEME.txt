@@ -1,0 +1,39 @@
+TUS FUNCIONES - proyectos 00 y 01
+=================================
+
+Estas son las funciones que TU escribiste, en su version final defendida.
+Reconstruidas desde la conversacion, verificadas compilando y pasando
+todos los tests.
+
+CONTENIDO
+---------
+00-ft_hello/src/       ft_putchar.c  ft_putstr.c  ft_putnbr.c
+01-ft_string/src/      ft_strlen.c  ft_putstr_fd.c  ft_strcpy.c
+                       ft_strncpy.c  ft_strcmp.c  ft_strchr.c
+01-ft_string/tests/    main.c   (con los prototipos ya actualizados a size_t)
+
+AQUI NO HAY: README.md, SUBJECT.md, THEORY.md ni Makefile.
+Solo codigo. Nada puede pisar tu documentacion.
+
+COMO USARLO
+-----------
+Copia las carpetas src/ sobre tu karamoon:
+
+  cp -r 00-ft_hello/src   /ruta/a/karamoon/00-ft_hello/
+  cp -r 01-ft_string/src  /ruta/a/karamoon/01-ft_string/
+  cp 01-ft_string/tests/main.c /ruta/a/karamoon/01-ft_string/tests/
+
+Y comprueba:
+
+  cd /ruta/a/karamoon/00-ft_hello  && make && ./hello
+  cd ../01-ft_string               && make && ./string
+
+NOTA SOBRE EL main.c DEL 01
+---------------------------
+El original declaraba  int ft_strlen(...)  y  ft_strncpy(..., int n).
+Como cambiaste ambas a size_t, los prototipos ya vienen corregidos.
+Sin eso compila igual pero con la incoherencia silenciosa entre ficheros.
+
+ANTES DE NADA
+-------------
+Haz  git init  y un commit en cuanto tengas esto colocado.
